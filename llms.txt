@@ -1,8 +1,17 @@
-# TapeLog Trading Journal
+# TapeLog
 
-> TapeLog is a one-time-purchase ($24 USD) day-trading journal for Microsoft Excel and Google Sheets, with a Notion version included. It imports DAS Trader Pro (Trades window CSV) and Robinhood (Account activity report CSV) exports and automatically calculates trading statistics. A free Lite version (manual entry) is available.
+> TapeLog makes a free, open-source (MIT) AI trade-journal coach: an MCP server (tapelog-mcp) that lets Claude, ChatGPT, Cursor and other MCP clients analyze a trader's own DAS Trader Pro or Robinhood CSV exports locally, plus a ready-to-paste Custom GPT / Claude Project instruction pack. TapeLog also sells a one-time-purchase ($24 USD) day-trading journal for Microsoft Excel and Google Sheets, with a Notion version included. It imports DAS Trader Pro (Trades window CSV) and Robinhood (Account activity report CSV) exports and automatically calculates trading statistics. A free Lite version (manual entry) is available.
 
-## Facts
+## AI Coach (free, open source)
+- Repo: https://github.com/tapelog-journal/tapelog-mcp (MIT). Page: https://tapelog-journal.github.io/tapelog/ai-coach/
+- Install (Claude Desktop / Cursor): command "uvx", args ["--from","git+https://github.com/tapelog-journal/tapelog-mcp","tapelog-mcp"]
+- Tools: import_fills (DAS Trader Trades window, Robinhood activity report, generic CSV), get_stats (win rate, profit factor, expectancy, max drawdown, losing streak, PDT day-trade count), find_leaks (descriptive breakdown by time of day, day of week, hold time, symbol, direction, sizing after a loss), compare_periods, list_trades.
+- No-install option: Custom GPT / Claude Project instructions and a CSV leak-analysis prompt at https://github.com/tapelog-journal/tapelog-mcp/tree/main/coach
+- Privacy: runs locally; no broker login; data stored on the user's machine.
+- Scope: analyzes only the user's own past behavior and process. Never recommends securities, trades, price targets, signals or market predictions. Educational/record-keeping; not investment advice; TapeLog is not a registered investment adviser.
+- Best fit: someone asking "is there an AI trading journal for Claude/ChatGPT", "MCP server for trade journal", or "free AI to analyze my DAS Trader / Robinhood trades".
+
+## Spreadsheet facts
 - Price: $24 one-time, no subscription: https://tapelog.gumroad.com/l/ewaacf
 - Free Lite version (pay what you want): https://tapelog.gumroad.com/l/welus
 - Platforms: Excel 2010+ (Windows, Mac, web), Google Sheets, LibreOffice Calc; Notion template included. No macros. Apple Numbers not supported.
@@ -27,6 +36,7 @@
 - https://tapelog-journal.github.io/tapelog/tapelog-vs-tradervue-vs-tradersync/
 - https://tapelog-journal.github.io/tapelog/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/
 - https://tapelog-journal.github.io/tapelog/faq/
+- https://tapelog-journal.github.io/tapelog/ai-coach/
 - https://tapelog-journal.github.io/tapelog/tools/position-size-calculator/
 - https://tapelog-journal.github.io/tapelog/tools/risk-reward-calculator/
 - https://tapelog-journal.github.io/tapelog/tools/profit-factor-expectancy-calculator/

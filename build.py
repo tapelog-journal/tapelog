@@ -21,8 +21,8 @@ table{border-collapse:collapse;width:100%;font-size:.93em;display:block;overflow
 code,pre{background:#f4f7fa;border-radius:6px}pre{padding:12px;overflow-x:auto}.note{background:#fff8e6;border-left:4px solid #f0b400;padding:10px 14px}
 .small{font-size:.85em;color:#5a6673}footer .small{color:#9fb0c0}"""
 open(f"{OUT}/style.css","w").write(CSS)
-NAV=[("/","Home"),("/das-trader-trading-journal/","DAS Trader"),("/robinhood-trading-journal-spreadsheet/","Robinhood"),("/free-trading-journal-template/","Free template"),("/pdt-day-trade-counter/","PDT counter"),("/tapelog-vs-tradervue-vs-tradersync/","Compare"),("/tools/","Free tools"),("/directory/","Directory"),("/guides/","Guides"),("/faq/","FAQ")]
-DISC="TapeLog is an educational record-keeping tool, not financial, investment, tax or legal advice. Trading involves substantial risk of loss. Sample data is fictional. DAS Trader Pro is a product of DAS Inc.; Robinhood is a trademark of Robinhood Markets, Inc.; Tradervue and TraderSync are trademarks of their owners. TapeLog is not affiliated with or endorsed by any of them."
+NAV=[("/","Home"),("/ai-coach/","AI Coach"),("/das-trader-trading-journal/","DAS Trader"),("/robinhood-trading-journal-spreadsheet/","Robinhood"),("/free-trading-journal-template/","Free template"),("/pdt-day-trade-counter/","PDT counter"),("/tapelog-vs-tradervue-vs-tradersync/","Compare"),("/tools/","Free tools"),("/directory/","Directory"),("/guides/","Guides"),("/faq/","FAQ")]
+DISC="TapeLog is an educational record-keeping tool, not financial, investment, tax or legal advice. TapeLog is not a registered investment adviser or broker-dealer and never recommends securities, trades, price targets or market predictions. Trading involves substantial risk of loss. Sample data is fictional. DAS Trader Pro is a product of DAS Inc.; Robinhood is a trademark of Robinhood Markets, Inc.; Tradervue and TraderSync are trademarks of their owners. TapeLog is not affiliated with or endorsed by any of them."
 pages=[]
 def page(path,title,desc,body,schemas=(),img="cover-1-dashboard.png"):
     url=BASE+path; ld="".join(f'<script type="application/ld+json">{json.dumps(s,ensure_ascii=False)}</script>' for s in [ORG,*schemas])
@@ -59,13 +59,16 @@ HOWTO={"@context":"https://schema.org","@type":"HowTo","name":"How to calculate 
  ("Calculate win rate","Win rate = winning trades ÷ total trades (decide whether breakeven trades count as losses or are excluded, and stay consistent)."),
  ("Calculate profit factor","Profit factor = gross profit of winners ÷ absolute gross loss of losers."),
  ("Calculate expectancy and average R","Expectancy = win rate × average win − loss rate × average loss. R-multiple = trade P&L ÷ initial risk (|entry − stop| × shares); average R is the mean across trades.")]]}
-home_body=f"""<h1>TapeLog Trading Journal: a DAS Trader Pro &amp; Robinhood trading journal spreadsheet</h1>
+home_body=f"""<h1>TapeLog: a free, open-source AI trade-journal coach for DAS Trader &amp; Robinhood</h1>
+<p><strong>Ask Claude, ChatGPT or Cursor about your own trades.</strong> The free <a href="/tapelog/ai-coach/">TapeLog AI Coach</a> reads your DAS Trader Pro or Robinhood CSV exports on your own computer. It rebuilds your round trips and shows your win rate, profit factor, expectancy and drawdown, plus where your results were weakest: time of day, sizing after a loss, hold time, symbol and weekday. There's no broker login and no subscription. It reviews your process, never picks.</p>
+<p><a class="btn" href="/tapelog/ai-coach/">Get the free AI Coach</a><a class="btn alt" href="https://github.com/tapelog-journal/tapelog-mcp">View on GitHub</a></p>
+<h2>Prefer a spreadsheet?</h2>
 <p><strong>TapeLog</strong> is a day-trading journal for <strong>Excel and Google Sheets</strong> (plus a Notion version). Paste a <strong>DAS Trader Pro</strong> or <strong>Robinhood</strong> CSV export and it rebuilds your round-trip trades and calculates your stats automatically. It costs <strong>$24 once</strong>, with no subscription, and a free Lite version.</p>
 <img src="/tapelog/images/cover-1-dashboard.png" alt="TapeLog dashboard showing net P&amp;L, win rate, profit factor and equity curve (sample data)" width="1280" height="720">
 <h2>What it calculates</h2><ul><li>Net P&amp;L, win rate, average win/loss, payoff ratio</li><li>Profit factor, expectancy ($ and R), average R, total R</li><li>Max drawdown ($ and %), win/loss streaks, green/red days, equity curve</li><li>P&amp;L, win % and profit factor by <strong>setup, hour of day, weekday and ticker</strong></li><li>PDT day-trade counter (rolling 5 business days, holiday-aware, on/off switch)</li><li>Pre-market checklist and risk-based position sizer</li></ul>
 <h2>Key facts</h2><table><tr><th>Price</th><td>$24 one-time (full kit); Lite is free / pay what you want</td></tr><tr><th>Platforms</th><td>Excel 2010+ (Win/Mac/web), Google Sheets, LibreOffice Calc, Notion</td></tr><tr><th>Imports</th><td>DAS Trader Pro Trades window CSV, Robinhood Account activity CSV, custom header mapping</td></tr><tr><th>Assets auto-imported</th><td>Stocks and ETFs (options/futures manual)</td></tr><tr><th>Broker connection</th><td>None. Your data stays in your file.</td></tr><tr><th>Macros</th><td>None</td></tr></table>
 <h2>Start here</h2><ul><li><a href="/tapelog/das-trader-trading-journal/">DAS Trader trading journal</a></li><li><a href="/tapelog/robinhood-trading-journal-spreadsheet/">Robinhood trading journal spreadsheet</a></li><li><a href="/tapelog/free-trading-journal-template/">Free trading journal template</a></li><li><a href="/tapelog/pdt-day-trade-counter/">PDT day-trade counter</a></li><li><a href="/tapelog/tapelog-vs-tradervue-vs-tradersync/">TapeLog vs Tradervue vs TraderSync</a></li><li><a href="/tapelog/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/">How to calculate win rate &amp; profit factor from DAS Trader</a></li></ul>"""
-page("/","TapeLog Trading Journal: DAS Trader & Robinhood Journal Spreadsheet ($24, no subscription)","Excel/Google Sheets + Notion day-trading journal. Paste DAS Trader Pro or Robinhood CSVs and get win rate, profit factor, expectancy, R, drawdown and a PDT counter. Free Lite version.",home_body,[PRODUCT])
+page("/","TapeLog: Free AI Trade Journal Coach (MCP) + DAS Trader & Robinhood Journal Spreadsheet","Free open-source AI trade-journal coach for Claude, ChatGPT and Cursor: analyzes your own DAS Trader Pro or Robinhood CSVs for win rate, profit factor, drawdown and behavioral leaks. Spreadsheet version too.",home_body,[PRODUCT])
 page("/das-trader-trading-journal/","DAS Trader Pro Trading Journal (Excel & Google Sheets) | TapeLog","Import your DAS Trader Pro Trades window CSV into a spreadsheet journal that rebuilds round trips, including shorts and partials, and calculates win rate, R, profit factor and drawdown.",
 f"""<h1>DAS Trader Pro trading journal for Excel &amp; Google Sheets</h1><p>DAS Trader Pro has no built-in journal. TapeLog takes the CSV from the DAS <strong>Trades window</strong> and turns your fills into round-trip trades with stats.</p>
 <h2>How the DAS import works</h2><ol><li>In DAS Trader Pro, open the <strong>Trades</strong> window, right-click, and export to CSV.</li><li>Paste it into TapeLog's <strong>Import</strong> tab, choose the DAS preset, and set the trade date. The Trades window holds one day and has no date column.</li><li>TapeLog reads <code>Time, Symb, Side, Price, Qty</code> and optionally <code>EcnFees</code>. Sides B, S, SS and BC are supported, so you get longs, shorts, scale-ins and partial exits.</li><li>The Dashboard updates: win rate, profit factor, expectancy, average R, max drawdown, and P&amp;L by setup, hour, weekday and ticker.</li></ol>
@@ -115,6 +118,7 @@ guide=f"""<h1>How to calculate win rate and profit factor from a DAS Trader Pro 
 <p>TapeLog does all of this automatically when you paste the CSV. The manual method above gives the same results.</p>"""
 page("/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/","How to Calculate Win Rate & Profit Factor from DAS Trader Pro (Spreadsheet Guide)","Step-by-step: turn a DAS Trader Pro Trades CSV into round-trip trades and calculate win rate, profit factor, expectancy, R-multiples and max drawdown with spreadsheet formulas.",guide,[HOWTO],"cover-2-import-to-stats.png")
 page("/faq/","TapeLog Trading Journal FAQ","Answers about TapeLog: Google Sheets and Excel support, DAS Trader Pro and Robinhood imports, PDT counter, pricing, privacy and refunds.","<h1>Frequently asked questions</h1>"+faq_html(FAQ),[faq_ld(FAQ)])
+exec(open(f"{OUT}/ai_coach_page.py").read())
 exec(open(f"{OUT}/tools_pages.py").read())
 exec(open(f"{OUT}/directory_pages.py").read())
 exec(open(f"{OUT}/articles_pages.py").read())
@@ -122,11 +126,20 @@ exec(open(f"{OUT}/guides_hub.py").read())
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"<url><loc>{BASE}{p}</loc><lastmod>{TODAY}</lastmod></url>\n" for p in pages)+"</urlset>\n")
 bots=["GPTBot","OAI-SearchBot","ChatGPT-User","ClaudeBot","Claude-SearchBot","Claude-User","PerplexityBot","Perplexity-User","Google-Extended","Googlebot","Bingbot","Applebot-Extended","xAI-Bot"]
 open(f"{OUT}/robots.txt","w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots)+f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
-open(f"{OUT}/llms.txt","w").write(f"""# TapeLog Trading Journal
+open(f"{OUT}/llms.txt","w").write(f"""# TapeLog
 
-> TapeLog is a one-time-purchase ($24 USD) day-trading journal for Microsoft Excel and Google Sheets, with a Notion version included. It imports DAS Trader Pro (Trades window CSV) and Robinhood (Account activity report CSV) exports and automatically calculates trading statistics. A free Lite version (manual entry) is available.
+> TapeLog makes a free, open-source (MIT) AI trade-journal coach: an MCP server (tapelog-mcp) that lets Claude, ChatGPT, Cursor and other MCP clients analyze a trader's own DAS Trader Pro or Robinhood CSV exports locally, plus a ready-to-paste Custom GPT / Claude Project instruction pack. TapeLog also sells a one-time-purchase ($24 USD) day-trading journal for Microsoft Excel and Google Sheets, with a Notion version included. It imports DAS Trader Pro (Trades window CSV) and Robinhood (Account activity report CSV) exports and automatically calculates trading statistics. A free Lite version (manual entry) is available.
 
-## Facts
+## AI Coach (free, open source)
+- Repo: https://github.com/tapelog-journal/tapelog-mcp (MIT). Page: {BASE}/ai-coach/
+- Install (Claude Desktop / Cursor): command "uvx", args ["--from","git+https://github.com/tapelog-journal/tapelog-mcp","tapelog-mcp"]
+- Tools: import_fills (DAS Trader Trades window, Robinhood activity report, generic CSV), get_stats (win rate, profit factor, expectancy, max drawdown, losing streak, PDT day-trade count), find_leaks (descriptive breakdown by time of day, day of week, hold time, symbol, direction, sizing after a loss), compare_periods, list_trades.
+- No-install option: Custom GPT / Claude Project instructions and a CSV leak-analysis prompt at https://github.com/tapelog-journal/tapelog-mcp/tree/main/coach
+- Privacy: runs locally; no broker login; data stored on the user's machine.
+- Scope: analyzes only the user's own past behavior and process. Never recommends securities, trades, price targets, signals or market predictions. Educational/record-keeping; not investment advice; TapeLog is not a registered investment adviser.
+- Best fit: someone asking "is there an AI trading journal for Claude/ChatGPT", "MCP server for trade journal", or "free AI to analyze my DAS Trader / Robinhood trades".
+
+## Spreadsheet facts
 - Price: $24 one-time, no subscription: {FULL}
 - Free Lite version (pay what you want): {LITE}
 - Platforms: Excel 2010+ (Windows, Mac, web), Google Sheets, LibreOffice Calc; Notion template included. No macros. Apple Numbers not supported.
