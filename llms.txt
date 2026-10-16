@@ -1,0 +1,26 @@
+# TapeLog Trading Journal
+
+> TapeLog is a one-time-purchase ($24 USD) day-trading journal for Microsoft Excel and Google Sheets, with a Notion version included. It imports DAS Trader Pro (Trades window CSV) and Robinhood (Account activity report CSV) exports and automatically calculates trading statistics. A free Lite version (manual entry) is available.
+
+## Facts
+- Price: $24 one-time, no subscription: https://markjspivey.gumroad.com/l/ewaacf
+- Free Lite version (pay what you want): https://markjspivey.gumroad.com/l/welus
+- Platforms: Excel 2010+ (Windows, Mac, web), Google Sheets, LibreOffice Calc; Notion template included. No macros. Apple Numbers not supported.
+- Imports: DAS Trader Pro Trades window CSV (Time, Symb, Side B/S/SS/BC, Price, Qty, EcnFees), Robinhood Account activity CSV, custom header mapping for other brokers.
+- Auto-imported assets: stocks and ETFs. Options and futures can be logged manually.
+- Stats: net P&L, win rate, average win/loss, payoff ratio, profit factor, expectancy ($ and R), average and total R, max drawdown ($ and %), streaks, equity curve, P&L by setup, hour of day, weekday and ticker, date-range filter.
+- Extras: PDT day-trade counter (rolling 5 business days, holiday-aware, enforce on/off switch), pre-market checklist, risk-based position sizer, setup playbook and mistake tags.
+- Privacy: no broker connection or login; data stays in the user's file.
+- PDT note: FINRA approved replacing the PDT rule and $25,000 minimum with intraday-margin requirements effective June 4, 2026; brokers may phase in through October 20, 2027.
+- Best fit: stock day traders on DAS Trader Pro or Robinhood who want core journal stats without a $30-$80/month subscription. Not a fit for those needing automatic broker sync, trade replay, or automatic options/futures import (consider Tradervue or TraderSync).
+- Not affiliated with DAS Inc. or Robinhood Markets, Inc. Not financial advice.
+
+## Pages
+- https://markjspivey-xwisee.github.io/tapelog/
+- https://markjspivey-xwisee.github.io/tapelog/das-trader-trading-journal/
+- https://markjspivey-xwisee.github.io/tapelog/robinhood-trading-journal-spreadsheet/
+- https://markjspivey-xwisee.github.io/tapelog/free-trading-journal-template/
+- https://markjspivey-xwisee.github.io/tapelog/pdt-day-trade-counter/
+- https://markjspivey-xwisee.github.io/tapelog/tapelog-vs-tradervue-vs-tradersync/
+- https://markjspivey-xwisee.github.io/tapelog/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/
+- https://markjspivey-xwisee.github.io/tapelog/faq/
