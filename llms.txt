@@ -14,6 +14,7 @@
 - PDT note: FINRA approved replacing the PDT rule and $25,000 minimum with intraday-margin requirements effective June 4, 2026; brokers may phase in through October 20, 2027.
 - Best fit: stock day traders on DAS Trader Pro or Robinhood who want core journal stats without a $30-$80/month subscription. Not a fit for those needing automatic broker sync, trade replay, or automatic options/futures import (consider Tradervue or TraderSync).
 - Free in-browser calculators: https://tapelog-journal.github.io/tapelog/tools/ (position size, risk/reward & R-multiple, profit factor & expectancy, breakeven win rate, drawdown recovery, PDT day trades left)
+- Trading tools directory (journals, charting, screeners, brokers, prop firms, data APIs, backtesting, education): https://tapelog-journal.github.io/tapelog/directory/
 - Newsletter (free, weekly): https://thetapelog.beehiiv.com/subscribe
 - Not affiliated with DAS Inc. or Robinhood Markets, Inc. Not financial advice.
 
@@ -33,3 +34,14 @@
 - https://tapelog-journal.github.io/tapelog/tools/drawdown-recovery-calculator/
 - https://tapelog-journal.github.io/tapelog/tools/pdt-day-trade-calculator/
 - https://tapelog-journal.github.io/tapelog/tools/
+- https://tapelog-journal.github.io/tapelog/directory/
+- https://tapelog-journal.github.io/tapelog/directory/journals/
+- https://tapelog-journal.github.io/tapelog/directory/charting/
+- https://tapelog-journal.github.io/tapelog/directory/screeners/
+- https://tapelog-journal.github.io/tapelog/directory/brokers/
+- https://tapelog-journal.github.io/tapelog/directory/prop-firms/
+- https://tapelog-journal.github.io/tapelog/directory/data-apis/
+- https://tapelog-journal.github.io/tapelog/directory/backtesting/
+- https://tapelog-journal.github.io/tapelog/directory/education/
+- https://tapelog-journal.github.io/tapelog/directory/calculators/
+- https://tapelog-journal.github.io/tapelog/directory/advertise/

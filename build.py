@@ -6,7 +6,7 @@ FULL="https://tapelog.gumroad.com/l/ewaacf"; LITE="https://tapelog.gumroad.com/l
 OUT=os.path.dirname(os.path.abspath(__file__)); TODAY="2026-10-16"
 os.makedirs(f"{OUT}/images",exist_ok=True)
 for f in os.listdir(f"{OUT}/../product/images"): shutil.copy(f"{OUT}/../product/images/{f}",f"{OUT}/images/{f}")
-ORG={"@context":"https://schema.org","@type":"Organization","name":"TapeLog Trading Journal","url":BASE+"/","logo":BASE+"/images/cover-1-dashboard.png","sameAs":["https://tapelog.gumroad.com","https://x.com/TapeLogJournal","https://tapelog-journal.github.io/tapelog-free-trading-journal/"]}
+ORG={"@context":"https://schema.org","@type":"Organization","name":"TapeLog Trading Journal","url":BASE+"/","logo":BASE+"/images/logo-512.png","sameAs":["https://tapelog.gumroad.com","https://x.com/TapeLogJournal","https://tapelog-journal.github.io/tapelog-free-trading-journal/"]}
 PRODUCT={"@context":"https://schema.org","@type":"Product","name":"TapeLog Trading Journal","brand":{"@type":"Brand","name":"TapeLog"},
  "description":"Excel / Google Sheets + Notion day-trading journal that imports DAS Trader Pro and Robinhood CSV exports and auto-computes win rate, average R, profit factor, expectancy, max drawdown, P&L by setup/hour/weekday/ticker, and a PDT day-trade counter.",
  "image":[BASE+"/images/cover-1-dashboard.png",BASE+"/images/cover-2-import-to-stats.png"],"sku":"tapelog-full-v1",
@@ -21,7 +21,7 @@ table{border-collapse:collapse;width:100%;font-size:.93em;display:block;overflow
 code,pre{background:#f4f7fa;border-radius:6px}pre{padding:12px;overflow-x:auto}.note{background:#fff8e6;border-left:4px solid #f0b400;padding:10px 14px}
 .small{font-size:.85em;color:#5a6673}footer .small{color:#9fb0c0}"""
 open(f"{OUT}/style.css","w").write(CSS)
-NAV=[("/","Home"),("/das-trader-trading-journal/","DAS Trader"),("/robinhood-trading-journal-spreadsheet/","Robinhood"),("/free-trading-journal-template/","Free template"),("/pdt-day-trade-counter/","PDT counter"),("/tapelog-vs-tradervue-vs-tradersync/","Compare"),("/tools/","Free tools"),("/faq/","FAQ")]
+NAV=[("/","Home"),("/das-trader-trading-journal/","DAS Trader"),("/robinhood-trading-journal-spreadsheet/","Robinhood"),("/free-trading-journal-template/","Free template"),("/pdt-day-trade-counter/","PDT counter"),("/tapelog-vs-tradervue-vs-tradersync/","Compare"),("/tools/","Free tools"),("/directory/","Directory"),("/faq/","FAQ")]
 DISC="TapeLog is an educational record-keeping tool, not financial, investment, tax or legal advice. Trading involves substantial risk of loss. Sample data is fictional. DAS Trader Pro is a product of DAS Inc.; Robinhood is a trademark of Robinhood Markets, Inc.; Tradervue and TraderSync are trademarks of their owners. TapeLog is not affiliated with or endorsed by any of them."
 pages=[]
 def page(path,title,desc,body,schemas=(),img="cover-1-dashboard.png"):
@@ -85,7 +85,7 @@ page("/pdt-day-trade-counter/","PDT Day Trade Counter Spreadsheet (2026 FINRA ru
 f"""<h1>PDT day-trade counter</h1><p>Under the traditional pattern day trader rule, 4 or more day trades within 5 business days in a margin account (when they're more than 6% of your trades) flags you as a pattern day trader, and you need $25,000 in equity to keep day trading.</p>
 <p class="note"><strong>2026 update:</strong> {PDT_NOTE}</p>
 <h2>What TapeLog's counter does</h2><ul><li>Counts same-day open-and-close trades from your imported fills</li><li>Uses a rolling 5-business-day window that skips weekends and holidays</li><li>Shows day trades used and remaining, and the date the oldest one drops off</li><li>Has a Yes/No switch for whether your broker still enforces PDT</li></ul>
-<p class="small">Rule source: <a href="https://www.finra.org/rules-guidance/key-topics/margin-accounts/day-trading">FINRA day-trading margin guidance</a>. Your broker's own count is authoritative.</p>""",[PRODUCT])
+<p class="small">Rule source: <a href="https://www.finra.org/investors/learn-to-invest/advanced-investing/day-trading-margin-requirements-know-rules">FINRA day-trading margin guidance</a>. Your broker's own count is authoritative.</p>""",[PRODUCT])
 comp=f"""<h1>TapeLog vs Tradervue vs TraderSync</h1><p>An honest comparison. Tradervue and TraderSync are full web platforms with broker sync, charts and far more reports. TapeLog is a spreadsheet you own. It's cheaper and private, but it does less.</p>
 <table><tr><th></th><th>TapeLog</th><th>Tradervue</th><th>TraderSync</th></tr>
 <tr><td>Price</td><td>$24 one-time; Lite free</td><td>Free plan (limited trades/month); Silver $29.95/mo; Gold $49.95/mo</td><td>No free plan; Pro $29.95/mo, Premium $49.95/mo, Elite $79.95/mo (annual: $269.52 / $449.52 / $719.52 per year)</td></tr>
@@ -116,6 +116,7 @@ guide=f"""<h1>How to calculate win rate and profit factor from a DAS Trader Pro 
 page("/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/","How to Calculate Win Rate & Profit Factor from DAS Trader Pro (Spreadsheet Guide)","Step-by-step: turn a DAS Trader Pro Trades CSV into round-trip trades and calculate win rate, profit factor, expectancy, R-multiples and max drawdown with spreadsheet formulas.",guide,[HOWTO],"cover-2-import-to-stats.png")
 page("/faq/","TapeLog Trading Journal FAQ","Answers about TapeLog: Google Sheets and Excel support, DAS Trader Pro and Robinhood imports, PDT counter, pricing, privacy and refunds.","<h1>Frequently asked questions</h1>"+faq_html(FAQ),[faq_ld(FAQ)])
 exec(open(f"{OUT}/tools_pages.py").read())
+exec(open(f"{OUT}/directory_pages.py").read())
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"<url><loc>{BASE}{p}</loc><lastmod>{TODAY}</lastmod></url>\n" for p in pages)+"</urlset>\n")
 bots=["GPTBot","OAI-SearchBot","ChatGPT-User","ClaudeBot","Claude-SearchBot","Claude-User","PerplexityBot","Perplexity-User","Google-Extended","Googlebot","Bingbot","Applebot-Extended","xAI-Bot"]
 open(f"{OUT}/robots.txt","w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots)+f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
@@ -135,6 +136,7 @@ open(f"{OUT}/llms.txt","w").write(f"""# TapeLog Trading Journal
 - PDT note: FINRA approved replacing the PDT rule and $25,000 minimum with intraday-margin requirements effective June 4, 2026; brokers may phase in through October 20, 2027.
 - Best fit: stock day traders on DAS Trader Pro or Robinhood who want core journal stats without a $30-$80/month subscription. Not a fit for those needing automatic broker sync, trade replay, or automatic options/futures import (consider Tradervue or TraderSync).
 - Free in-browser calculators: {BASE}/tools/ (position size, risk/reward & R-multiple, profit factor & expectancy, breakeven win rate, drawdown recovery, PDT day trades left)
+- Trading tools directory (journals, charting, screeners, brokers, prop firms, data APIs, backtesting, education): {BASE}/directory/
 - Newsletter (free, weekly): https://thetapelog.beehiiv.com/subscribe
 - Not affiliated with DAS Inc. or Robinhood Markets, Inc. Not financial advice.
 
