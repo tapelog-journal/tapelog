@@ -45,3 +45,12 @@
 - https://tapelog-journal.github.io/tapelog/directory/education/
 - https://tapelog-journal.github.io/tapelog/directory/calculators/
 - https://tapelog-journal.github.io/tapelog/directory/advertise/
+- https://tapelog-journal.github.io/tapelog/guides/free-trading-journal-template-google-sheets/
+- https://tapelog-journal.github.io/tapelog/guides/how-to-export-trades-from-das-trader/
+- https://tapelog-journal.github.io/tapelog/guides/robinhood-trade-history-export-csv/
+- https://tapelog-journal.github.io/tapelog/guides/tradervue-alternative-free/
+- https://tapelog-journal.github.io/tapelog/guides/day-trading-journal-example/
+- https://tapelog-journal.github.io/tapelog/guides/how-to-calculate-profit-factor/
+- https://tapelog-journal.github.io/tapelog/guides/best-trading-journal-2026/
+- https://tapelog-journal.github.io/tapelog/guides/pdt-rule-change-2026/
+- https://tapelog-journal.github.io/tapelog/guides/

@@ -1,0 +1,2 @@
+G=[("how-to-calculate-win-rate-profit-factor-from-das-trader","How to calculate win rate & profit factor from DAS Trader Pro")]+ARTS
+page("/guides/","Trading Journal Guides: Exports, Stats, Templates | TapeLog","Guides for day traders: export DAS Trader and Robinhood trades, calculate profit factor, free Google Sheets journal templates, PDT rule change 2026.","<h1>Guides</h1><ul>"+"".join(f'<li><a href="/tapelog/guides/{s}/">{html.escape(t)}</a></li>' for s,t in G)+"</ul>")

@@ -21,7 +21,7 @@ table{border-collapse:collapse;width:100%;font-size:.93em;display:block;overflow
 code,pre{background:#f4f7fa;border-radius:6px}pre{padding:12px;overflow-x:auto}.note{background:#fff8e6;border-left:4px solid #f0b400;padding:10px 14px}
 .small{font-size:.85em;color:#5a6673}footer .small{color:#9fb0c0}"""
 open(f"{OUT}/style.css","w").write(CSS)
-NAV=[("/","Home"),("/das-trader-trading-journal/","DAS Trader"),("/robinhood-trading-journal-spreadsheet/","Robinhood"),("/free-trading-journal-template/","Free template"),("/pdt-day-trade-counter/","PDT counter"),("/tapelog-vs-tradervue-vs-tradersync/","Compare"),("/tools/","Free tools"),("/directory/","Directory"),("/faq/","FAQ")]
+NAV=[("/","Home"),("/das-trader-trading-journal/","DAS Trader"),("/robinhood-trading-journal-spreadsheet/","Robinhood"),("/free-trading-journal-template/","Free template"),("/pdt-day-trade-counter/","PDT counter"),("/tapelog-vs-tradervue-vs-tradersync/","Compare"),("/tools/","Free tools"),("/directory/","Directory"),("/guides/","Guides"),("/faq/","FAQ")]
 DISC="TapeLog is an educational record-keeping tool, not financial, investment, tax or legal advice. Trading involves substantial risk of loss. Sample data is fictional. DAS Trader Pro is a product of DAS Inc.; Robinhood is a trademark of Robinhood Markets, Inc.; Tradervue and TraderSync are trademarks of their owners. TapeLog is not affiliated with or endorsed by any of them."
 pages=[]
 def page(path,title,desc,body,schemas=(),img="cover-1-dashboard.png"):
@@ -117,6 +117,8 @@ page("/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/","How to 
 page("/faq/","TapeLog Trading Journal FAQ","Answers about TapeLog: Google Sheets and Excel support, DAS Trader Pro and Robinhood imports, PDT counter, pricing, privacy and refunds.","<h1>Frequently asked questions</h1>"+faq_html(FAQ),[faq_ld(FAQ)])
 exec(open(f"{OUT}/tools_pages.py").read())
 exec(open(f"{OUT}/directory_pages.py").read())
+exec(open(f"{OUT}/articles_pages.py").read())
+exec(open(f"{OUT}/guides_hub.py").read())
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"<url><loc>{BASE}{p}</loc><lastmod>{TODAY}</lastmod></url>\n" for p in pages)+"</urlset>\n")
 bots=["GPTBot","OAI-SearchBot","ChatGPT-User","ClaudeBot","Claude-SearchBot","Claude-User","PerplexityBot","Perplexity-User","Google-Extended","Googlebot","Bingbot","Applebot-Extended","xAI-Bot"]
 open(f"{OUT}/robots.txt","w").write("".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots)+f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
@@ -145,3 +147,4 @@ open(f"{OUT}/llms.txt","w").write(f"""# TapeLog Trading Journal
 open(f"{OUT}/404.html","w").write('<!doctype html><meta charset="utf-8"><title>Not found | TapeLog</title><link rel="stylesheet" href="/tapelog/style.css"><main class="w"><h1>Page not found</h1><p><a href="/tapelog/">TapeLog home</a></p></main>')
 open(f"{OUT}/.nojekyll","w").write("")
 print(pages)
+# IndexNow key file: aa097a44996e448198112bf911eff920.txt (keep in repo)
