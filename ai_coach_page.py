@@ -21,7 +21,7 @@ cfg='''{
 }'''
 body=f"""<h1>TapeLog AI Coach: a free AI trade-journal coach for Claude, ChatGPT &amp; Cursor</h1>
 <p>Point your AI assistant at your <strong>DAS Trader Pro</strong> or <strong>Robinhood</strong> export and ask how you actually traded. TapeLog is an open-source <a href="https://modelcontextprotocol.io">MCP</a> server. It rebuilds your round trips locally, calculates your stats, and describes the patterns in your own behavior.</p>
-<p><a class="btn" href="{REPO}">Get it on GitHub (free, MIT)</a><a class="btn alt" href="{REPO}/tree/main/coach">No-install GPT / Claude Project pack</a></p>
+<p><a class="btn" href="{REPO}">Get it on GitHub (free, MIT)</a><a class="btn alt" href="{REPO}/tree/main/coach">No-install GPT / Claude Project pack</a><a class="btn alt" href="https://thetapelog.beehiiv.com/subscribe">Join the Pro waitlist</a></p>
 <p class="note"><strong>Process, not picks.</strong> TapeLog analyzes only your own past trades: timing, sizing, hold times and discipline. It never recommends buying, selling or holding any security, never gives price targets, signals or market predictions, and never places trades. It is educational and record-keeping software, <strong>not investment advice</strong>, and TapeLog is <strong>not a registered investment adviser</strong>.</p>
 <h2>What you can ask</h2><ul><li>"Import today's DAS trades and show my stats."</li><li>"Where were my results weakest this month?"</li><li>"Compare last week to this week."</li><li>"How did my position size change after a losing trade?"</li></ul>
 <h2>Example output (sample data)</h2><pre>Your 18 trades entered 11:00-12:00 netted -$2,039 (avg -$113, win rate 11%).
@@ -34,6 +34,8 @@ Your losing trades were held 26.1 min on average vs 10.4 min for winners.</pre>
 <p>Claude Code: <code>claude mcp add tapelog -- uvx --from git+https://github.com/tapelog-journal/tapelog-mcp tapelog-mcp</code></p>
 <h2>No MCP? Use the Coach prompt</h2><p>Paste <a href="{REPO}/blob/main/coach/instructions.md">the TapeLog Coach instructions</a> into a ChatGPT Custom GPT or a Claude Project, or paste the <a href="{REPO}/blob/main/coach/leak-analysis-prompt.md">one-shot leak-analysis prompt</a> into any chat with your CSV attached.</p>
 <h2>How to export your trades</h2><ul><li><a href="/tapelog/guides/how-to-export-trades-from-das-trader/">Export trades from DAS Trader</a></li><li><a href="/tapelog/guides/robinhood-trade-history-export-csv/">Export Robinhood trade history CSV</a></li></ul>
+<h2 id="pro">TapeLog Pro (coming soon)</h2><p>A hosted version for people who don't want to install anything: it works directly in ChatGPT and claude.ai, keeps your trade history in the cloud, lets you upload a CSV by email, and sends a weekly AI review of your process. It also alerts you when you break rules you set yourself, like "more than 6 trades before 10:00." The open-source core stays free.</p>
+<p><a class="btn" href="https://thetapelog.beehiiv.com/subscribe">Join the Pro waitlist</a></p><p class="small">Joining subscribes you to the free weekly TapeLog newsletter, which is where we'll announce Pro. Unsubscribe anytime.</p>
 <h2>FAQ</h2>{faq_html(AIQ)}
 <p>Want a weekly breakdown of your process? Join the free <a href="https://thetapelog.beehiiv.com/subscribe">TapeLog newsletter</a>. Prefer a spreadsheet? The journal below still works.</p>"""
 page("/ai-coach/","TapeLog AI Coach: Free AI Trading Journal for Claude, ChatGPT & Cursor (MCP, open source)",
