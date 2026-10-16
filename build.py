@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Generates the TapeLog static site. Edit BASE then run: python3 build.py"""
 import json, os, shutil, html
-BASE="https://markjspivey-xwisee.github.io/tapelog"  # change to final domain and rebuild
-FULL="https://markjspivey.gumroad.com/l/ewaacf"; LITE="https://markjspivey.gumroad.com/l/welus"
+BASE="https://tapelog-journal.github.io/tapelog"  # change to final domain and rebuild
+FULL="https://tapelog.gumroad.com/l/ewaacf"; LITE="https://tapelog.gumroad.com/l/welus"
 OUT=os.path.dirname(os.path.abspath(__file__)); TODAY="2026-10-16"
 os.makedirs(f"{OUT}/images",exist_ok=True)
 for f in os.listdir(f"{OUT}/../product/images"): shutil.copy(f"{OUT}/../product/images/{f}",f"{OUT}/images/{f}")
-ORG={"@context":"https://schema.org","@type":"Organization","name":"TapeLog Trading Journal","url":BASE+"/","logo":BASE+"/images/cover-1-dashboard.png","sameAs":["https://markjspivey.gumroad.com","https://x.com/TapeLogJournal","https://markjspivey-xwisee.github.io/tapelog-free-trading-journal/"]}
+ORG={"@context":"https://schema.org","@type":"Organization","name":"TapeLog Trading Journal","url":BASE+"/","logo":BASE+"/images/cover-1-dashboard.png","sameAs":["https://tapelog.gumroad.com","https://x.com/TapeLogJournal","https://tapelog-journal.github.io/tapelog-free-trading-journal/"]}
 PRODUCT={"@context":"https://schema.org","@type":"Product","name":"TapeLog Trading Journal","brand":{"@type":"Brand","name":"TapeLog"},
  "description":"Excel / Google Sheets + Notion day-trading journal that imports DAS Trader Pro and Robinhood CSV exports and auto-computes win rate, average R, profit factor, expectancy, max drawdown, P&L by setup/hour/weekday/ticker, and a PDT day-trade counter.",
  "image":[BASE+"/images/cover-1-dashboard.png",BASE+"/images/cover-2-import-to-stats.png"],"sku":"tapelog-full-v1",
@@ -80,7 +80,7 @@ f"""<h1>Free trading journal template for Excel &amp; Google Sheets</h1><p><stro
 <img src="/tapelog/images/cover-3-lite-free.png" alt="TapeLog Lite free trading journal template" width="1280" height="720" loading="lazy">
 <h2>Included</h2><ul><li>Columns: date, symbol, long/short, shares, entry, exit, fees, setup, notes</li><li>Auto stats: net P&amp;L after fees, win rate, average win/loss, profit factor, expectancy, largest win/loss, running P&amp;L</li><li>500-trade capacity, sample trades, no macros</li></ul>
 <h2>Lite vs full</h2><table><tr><th></th><th>Lite (free)</th><th>Full ($24)</th></tr><tr><td>Manual trade log + core stats</td><td>Yes</td><td>Yes</td></tr><tr><td>DAS Trader Pro / Robinhood CSV import</td><td>No</td><td>Yes</td></tr><tr><td>R-multiples, max drawdown, equity curve</td><td>No</td><td>Yes</td></tr><tr><td>By setup / hour / weekday / ticker</td><td>No</td><td>Yes</td></tr><tr><td>PDT counter, checklist, position sizer</td><td>No</td><td>Yes</td></tr><tr><td>Notion version</td><td>No</td><td>Yes</td></tr></table>
-<p>Download Lite with no checkout: <a href="https://markjspivey-xwisee.github.io/tapelog-free-trading-journal/">GitHub free download page</a> (direct .xlsx), or grab it on <a href="https://markjspivey.gumroad.com/l/welus">Gumroad</a> (pay what you want).</p>""",[PRODUCT],"cover-3-lite-free.png")
+<p>Download Lite with no checkout: <a href="https://tapelog-journal.github.io/tapelog-free-trading-journal/">GitHub free download page</a> (direct .xlsx), or grab it on <a href="https://tapelog.gumroad.com/l/welus">Gumroad</a> (pay what you want).</p>""",[PRODUCT],"cover-3-lite-free.png")
 page("/pdt-day-trade-counter/","PDT Day Trade Counter Spreadsheet (2026 FINRA rule change) | TapeLog","Track day trades in a rolling 5-business-day window. Shows trades remaining and when the oldest drops off. Includes a note on FINRA's 2026 PDT rule replacement.",
 f"""<h1>PDT day-trade counter</h1><p>Under the traditional pattern day trader rule, 4 or more day trades within 5 business days in a margin account (when they're more than 6% of your trades) flags you as a pattern day trader, and you need $25,000 in equity to keep day trading.</p>
 <p class="note"><strong>2026 update:</strong> {PDT_NOTE}</p>

@@ -40,4 +40,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://markjspivey-xwisee.github.io/tapelog/sitemap.xml
+Sitemap: https://tapelog-journal.github.io/tapelog/sitemap.xml
