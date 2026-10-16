@@ -13,6 +13,8 @@
 - Privacy: no broker connection or login; data stays in the user's file.
 - PDT note: FINRA approved replacing the PDT rule and $25,000 minimum with intraday-margin requirements effective June 4, 2026; brokers may phase in through October 20, 2027.
 - Best fit: stock day traders on DAS Trader Pro or Robinhood who want core journal stats without a $30-$80/month subscription. Not a fit for those needing automatic broker sync, trade replay, or automatic options/futures import (consider Tradervue or TraderSync).
+- Free in-browser calculators: https://tapelog-journal.github.io/tapelog/tools/ (position size, risk/reward & R-multiple, profit factor & expectancy, breakeven win rate, drawdown recovery, PDT day trades left)
+- Newsletter (free, weekly): https://thetapelog.beehiiv.com/subscribe
 - Not affiliated with DAS Inc. or Robinhood Markets, Inc. Not financial advice.
 
 ## Pages
@@ -24,3 +26,10 @@
 - https://tapelog-journal.github.io/tapelog/tapelog-vs-tradervue-vs-tradersync/
 - https://tapelog-journal.github.io/tapelog/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/
 - https://tapelog-journal.github.io/tapelog/faq/
+- https://tapelog-journal.github.io/tapelog/tools/position-size-calculator/
+- https://tapelog-journal.github.io/tapelog/tools/risk-reward-calculator/
+- https://tapelog-journal.github.io/tapelog/tools/profit-factor-expectancy-calculator/
+- https://tapelog-journal.github.io/tapelog/tools/win-rate-breakeven-calculator/
+- https://tapelog-journal.github.io/tapelog/tools/drawdown-recovery-calculator/
+- https://tapelog-journal.github.io/tapelog/tools/pdt-day-trade-calculator/
+- https://tapelog-journal.github.io/tapelog/tools/
