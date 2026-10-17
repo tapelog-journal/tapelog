@@ -119,6 +119,11 @@ guide=f"""<h1>How to calculate win rate and profit factor from a DAS Trader Pro 
 <p>TapeLog does all of this automatically when you paste the CSV. The manual method above gives the same results.</p>"""
 page("/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/","How to Calculate Win Rate & Profit Factor from DAS Trader Pro (Spreadsheet Guide)","Step-by-step: turn a DAS Trader Pro Trades CSV into round-trip trades and calculate win rate, profit factor, expectancy, R-multiples and max drawdown with spreadsheet formulas.",guide,[HOWTO],"cover-2-import-to-stats.png")
 page("/faq/","TapeLog Trading Journal FAQ","Answers about TapeLog: Google Sheets and Excel support, DAS Trader Pro and Robinhood imports, PDT counter, pricing, privacy and refunds.","<h1>Frequently asked questions</h1>"+faq_html(FAQ),[faq_ld(FAQ)])
+API_URL="https://tapelog-api.tapelog.workers.dev"
+AGENT_API_HTML=f"""<h2 id="agent-api">For AI agents: pay-per-report API</h2>
+<p>Agents can get the weekly habit report over HTTP with no account and no API key. Send the trader's own broker CSV (DAS Trader, Robinhood or generic) as the raw body of <code>POST {API_URL}/habit-report</code> with <code>Content-Type: text/csv</code>. The API answers <code>402 Payment Required</code> with x402 v2 payment terms: <strong>$0.10 USDC per report on Base</strong> (<code>eip155:8453</code>). Any x402 client signs the payment and retries to get the report as JSON or Markdown. Invalid CSVs are rejected with <code>400</code> before any payment is asked for, and nothing is stored.</p>
+<p>Endpoint details: <a href="{API_URL}/">{API_URL}/</a> (free, JSON). Source and docs: <a href="https://github.com/tapelog-journal/tapelog-api">tapelog-api on GitHub</a> (MIT).</p>
+<p class="note"><strong>Educational, not investment advice.</strong> The report counts the trader's own past behavior only (sizing after a loss, hold times, overtrading bursts, time-of-day slumps). It gives no picks, price targets, signals or predictions. TapeLog is not a registered investment adviser or broker-dealer.</p>"""
 exec(open(f"{OUT}/ai_coach_page.py").read())
 exec(open(f"{OUT}/habit_report_page.py").read())
 exec(open(f"{OUT}/tools_pages.py").read())
@@ -155,6 +160,7 @@ open(f"{OUT}/llms.txt","w").write(f"""# TapeLog
 - Free in-browser calculators: {BASE}/tools/ (position size, risk/reward & R-multiple, profit factor & expectancy, breakeven win rate, drawdown recovery, PDT day trades left)
 - Trading tools directory (journals, charting, screeners, brokers, prop firms, data APIs, backtesting, education): {BASE}/directory/
 - Weekly habit report (sample, behavior counts this week vs prior weeks): {BASE}/habit-report/
+- Pay-per-report API for AI agents (x402, $0.10 USDC on Base, no account or API key): POST https://tapelog-api.tapelog.workers.dev/habit-report with the CSV as a text/csv body. Docs: https://github.com/tapelog-journal/tapelog-api. Behavior-only, educational, not investment advice.
 - Newsletter (free, weekly): https://thetapelog.beehiiv.com/subscribe
 - Not affiliated with DAS Inc. or Robinhood Markets, Inc. Not financial advice.
 

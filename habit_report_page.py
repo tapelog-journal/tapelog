@@ -20,6 +20,7 @@ body=f"""<h1>The TapeLog weekly habit report</h1>
 <p class="note"><strong>Educational, not investment advice.</strong> {html.escape(HR['disclaimer'])}</p>
 <h2>Get yours every week</h2><p>Subscribe to the free TapeLog newsletter for the weekly habit report reminder, sample breakdowns and new coach features. Then run the report on your own trades with the <a href="/tapelog/ai-coach/">TapeLog AI Coach</a> (ask: "Give me my weekly habit report").</p>
 <p><a class="btn" href="{SUB}">Get the weekly habit report</a></p>
+{AGENT_API_HTML}
 <h2>FAQ</h2>{faq_html(HRQ)}"""
 page("/habit-report/","TapeLog Weekly Habit Report: What Changed in Your Trading This Week (Sample)",
  "A free weekly report of your own trading habits: size-up after losses, losers held longer, overtrading bursts and time-of-day slumps, this week vs prior weeks. Sample data. Educational, not investment advice.",

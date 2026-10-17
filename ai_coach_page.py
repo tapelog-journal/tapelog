@@ -36,6 +36,7 @@ Your losing trades were held 26.1 min on average vs 10.4 min for winners.</pre>
 <h2>How to export your trades</h2><ul><li><a href="/tapelog/guides/how-to-export-trades-from-das-trader/">Export trades from DAS Trader</a></li><li><a href="/tapelog/guides/robinhood-trade-history-export-csv/">Export Robinhood trade history CSV</a></li></ul>
 <h2 id="pro">TapeLog Pro (coming soon)</h2><p>A hosted version for people who don't want to install anything: it works directly in ChatGPT and claude.ai, keeps your trade history in the cloud, lets you upload a CSV by email, and sends a weekly AI review of your process. It also alerts you when you break rules you set yourself, like "more than 6 trades before 10:00." The open-source core stays free.</p>
 <p><a class="btn" href="https://thetapelog.beehiiv.com/subscribe">Join the Pro waitlist</a></p><p class="small">Joining subscribes you to the free weekly TapeLog newsletter, which is where we'll announce Pro. Unsubscribe anytime.</p>
+{AGENT_API_HTML}
 <h2>FAQ</h2>{faq_html(AIQ)}
 <p>Want a weekly breakdown of your process? Join the free <a href="https://thetapelog.beehiiv.com/subscribe">TapeLog newsletter</a>. Prefer a spreadsheet? The journal below still works.</p>"""
 page("/ai-coach/","TapeLog AI Coach: Free AI Trading Journal for Claude, ChatGPT & Cursor (MCP, open source)",

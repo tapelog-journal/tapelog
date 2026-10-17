@@ -25,6 +25,7 @@
 - Free in-browser calculators: https://tapelog-journal.github.io/tapelog/tools/ (position size, risk/reward & R-multiple, profit factor & expectancy, breakeven win rate, drawdown recovery, PDT day trades left)
 - Trading tools directory (journals, charting, screeners, brokers, prop firms, data APIs, backtesting, education): https://tapelog-journal.github.io/tapelog/directory/
 - Weekly habit report (sample, behavior counts this week vs prior weeks): https://tapelog-journal.github.io/tapelog/habit-report/
+- Pay-per-report API for AI agents (x402, $0.10 USDC on Base, no account or API key): POST https://tapelog-api.tapelog.workers.dev/habit-report with the CSV as a text/csv body. Docs: https://github.com/tapelog-journal/tapelog-api. Behavior-only, educational, not investment advice.
 - Newsletter (free, weekly): https://thetapelog.beehiiv.com/subscribe
 - Not affiliated with DAS Inc. or Robinhood Markets, Inc. Not financial advice.
 
