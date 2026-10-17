@@ -1,67 +1,68 @@
-TapeLog Trading Journal	https://tapelog-journal.github.io/tapelog/	journals	Free Lite; $24 one-time	excel,google-sheets,notion,das-trader,robinhood	Spreadsheet trading journal that imports DAS Trader Pro and Robinhood CSVs (this site's own product).
-Tradervue	https://www.tradervue.com/	journals	Free plan; paid tiers	web,stocks,futures	Web-based trading journal with trade charts and performance reports.
-TraderSync	https://tradersync.com/	journals	Paid	web,mobile,broker-sync	Trading journal with broker auto-import, replay and analytics.
-Edgewonk	https://edgewonk.com/	journals	Paid	desktop,web,psychology	Trading journal focused on statistics and trader psychology.
-TradeZella	https://www.tradezella.com/	journals	Paid	web,broker-sync,replay	Trading journal with automatic imports, playbooks and trade replay.
-Kinfo	https://kinfo.com/	journals	Free; paid tiers	web,mobile,social	Trading journal and verified performance tracking with social features.
-Chartlog	https://www.chartlog.com/	journals	Free plan; paid tiers	web,charts	Trading journal with charts generated for each trade.
-Stonk Journal	https://stonkjournal.com/	journals	Free; paid tiers	web,stocks,options	Simple web trading journal for stocks and options.
-TradesViz	https://www.tradesviz.com/	journals	Free plan; paid tiers	web,analytics	Trading journal with extensive charts and statistics.
-TradingView	https://www.tradingview.com/	charting	Free plan; paid tiers	web,charts,screener,pine-script	Web charting platform with indicators, screeners and a social community.
-TrendSpider	https://trendspider.com/	charting	Paid	web,charts,automation	Charting and technical analysis platform with automated pattern tools.
-StockCharts	https://stockcharts.com/	charting	Free charts; paid tiers	web,charts	Long-running web charting service for technical analysis.
-thinkorswim	https://www.schwab.com/trading/thinkorswim	charting	Free with Schwab account	desktop,charts,options	Schwab's trading and charting platform.
-Sierra Chart	https://www.sierrachart.com/	charting	Paid	desktop,futures,charts	Desktop trading and charting platform popular with futures traders.
-NinjaTrader	https://ninjatrader.com/	charting	Free platform; paid options	desktop,futures	Futures trading and charting platform and brokerage.
-MetaTrader 5	https://www.metatrader5.com/	charting	Free	desktop,forex,cfd	Multi-asset trading platform widely offered by forex and CFD brokers.
-DAS Trader Pro	https://dastrader.com/	charting	Paid via broker	desktop,stocks,hotkeys	Direct-access stock trading platform used by active day traders.
-Finviz	https://finviz.com/	screeners	Free; paid Elite	web,stocks,screener	Stock screener, heat maps and market overview.
-Trade Ideas	https://www.trade-ideas.com/	screeners	Paid	scanner,real-time	Real-time stock scanner with AI-driven trade ideas.
-Stock Rover	https://www.stockrover.com/	screeners	Free plan; paid tiers	web,fundamentals	Research and screening platform focused on fundamentals.
-Benzinga Pro	https://pro.benzinga.com/	screeners	Paid	news,real-time	Real-time market news and squawk for active traders.
-Barchart	https://www.barchart.com/	screeners	Free; paid tiers	web,futures,options	Market data, screeners and options flow tools.
-Unusual Whales	https://unusualwhales.com/	screeners	Free; paid tiers	options,flow	Options flow and market data platform.
-Zacks	https://www.zacks.com/	screeners	Free; paid tiers	research,ratings	Stock research and screening with Zacks Rank ratings.
-Interactive Brokers	https://www.interactivebrokers.com/	brokers	Varies	stocks,options,futures,global	Global multi-asset broker with low-cost trading.
-Charles Schwab	https://www.schwab.com/	brokers	Varies	stocks,options,thinkorswim	US broker offering thinkorswim platform.
-Fidelity	https://www.fidelity.com/	brokers	Varies	stocks,etfs	US broker with Active Trader Pro platform.
-Robinhood	https://robinhood.com/	brokers	Varies	stocks,options,crypto,mobile	Commission-free app-based US broker.
-Webull	https://www.webull.com/	brokers	Varies	stocks,options,mobile	App-based broker with charting tools.
-TradeStation	https://www.tradestation.com/	brokers	Varies	stocks,futures,easylanguage	Broker and platform with EasyLanguage strategy scripting.
-Lightspeed	https://www.lightspeed.com/	brokers	Varies	direct-access,active-traders	Direct-access broker for high-volume traders.
-Cobra Trading	https://www.cobratrading.com/	brokers	Varies	direct-access,short-locates	Direct-access broker known for short locates; offers DAS.
-Tastytrade	https://tastytrade.com/	brokers	Varies	options,futures	Broker focused on options and futures traders.
-E*TRADE	https://us.etrade.com/	brokers	Varies	stocks,options	US broker from Morgan Stanley with Power E*TRADE platform.
-Tradovate	https://www.tradovate.com/	brokers	Varies	futures,web	Cloud-based futures trading platform and broker.
-Topstep	https://www.topstep.com/	prop-firms	Paid evaluation	futures,funded	Futures funded-trader evaluation program.
-FTMO	https://ftmo.com/	prop-firms	Paid evaluation	forex,cfd,funded	Forex and CFD funded-trader challenge.
-Apex Trader Funding	https://apextraderfunding.com/	prop-firms	Paid evaluation	futures,funded	Futures funded-trader evaluation program.
-Earn2Trade	https://www.earn2trade.com/	prop-firms	Paid evaluation	futures,funded	Futures funded-trader programs and education.
-The5ers	https://the5ers.com/	prop-firms	Paid evaluation	forex,funded	Forex funded-trader programs.
-Trade The Pool	https://tradethepool.com/	prop-firms	Paid evaluation	stocks,funded	Stock-focused funded-trader evaluation.
-Polygon.io	https://polygon.io/	data-apis	Free tier; paid	api,stocks,options,real-time	Market data APIs for stocks, options, forex and crypto.
-Alpha Vantage	https://www.alphavantage.co/	data-apis	Free tier; paid	api,stocks,fundamentals	Free and premium stock market data API.
-Alpaca	https://alpaca.markets/	data-apis	Free tier; paid	api,broker,algo	Commission-free trading and market data API.
-Tiingo	https://www.tiingo.com/	data-apis	Free tier; paid	api,eod,news	Financial data API with end-of-day prices and news.
-Financial Modeling Prep	https://site.financialmodelingprep.com/	data-apis	Free tier; paid	api,fundamentals	Fundamentals and price data API.
-Nasdaq Data Link	https://data.nasdaq.com/	data-apis	Free and paid datasets	api,datasets	Financial and alternative datasets (formerly Quandl).
-Databento	https://databento.com/	data-apis	Usage-based	api,tick-data,futures	Tick-level historical and real-time market data.
-SEC EDGAR	https://www.sec.gov/edgar/search/	data-apis	Free	filings,fundamentals	Official US company filings search.
-FRED	https://fred.stlouisfed.org/	data-apis	Free	macro,api	Federal Reserve economic data series and API.
-yfinance	https://github.com/ranaroussi/yfinance	data-apis	Free (open source)	python,open-source	Python library for downloading Yahoo Finance data.
-Backtrader	https://www.backtrader.com/	backtesting	Free (open source)	python,open-source	Python backtesting and trading framework.
-QuantConnect	https://www.quantconnect.com/	backtesting	Free tier; paid	cloud,python,c#	Cloud algorithmic trading and backtesting platform (LEAN engine).
-Backtesting.py	https://kernc.github.io/backtesting.py/	backtesting	Free (open source)	python,open-source	Lightweight Python backtesting library.
-vectorbt	https://vectorbt.dev/	backtesting	Free (open source); PRO paid	python,vectorized	Vectorized backtesting and analysis in Python.
-Zipline Reloaded	https://github.com/stefan-jansen/zipline-reloaded	backtesting	Free (open source)	python,open-source	Maintained fork of the Zipline backtesting library.
-Amibroker	https://www.amibroker.com/	backtesting	Paid	desktop,afl	Desktop charting and backtesting software.
-Forex Tester	https://forextester.com/	backtesting	Paid	desktop,replay	Manual backtesting and market replay software.
-TradingView Bar Replay	https://www.tradingview.com/support/solutions/43000712747-bar-replay-how-and-why-to-test-a-strategy-in-the-past/	backtesting	Free and paid plans	replay,manual	Replay historical bars to practice and test strategies.
-Investopedia	https://www.investopedia.com/	education	Free	articles,definitions	Financial education articles and dictionary.
-FINRA Day Trading Guidance	https://www.finra.org/investors/learn-to-invest/advanced-investing/day-trading-margin-requirements-know-rules	education	Free	regulation,pdt	Official FINRA information on day trading and margin rules.
-SEC Investor.gov	https://www.investor.gov/	education	Free	investor-protection	SEC's investor education site.
-CME Group Education	https://www.cmegroup.com/education.html	education	Free	futures,courses	Free futures and options courses from CME Group.
-Options Industry Council	https://www.optionseducation.org/	education	Free	options,courses	Free options education from the OIC.
-BabyPips	https://www.babypips.com/	education	Free	forex,course	Free beginner forex trading course.
-SMB Capital YouTube	https://www.youtube.com/@smbcapital	education	Free	video,day-trading	Day-trading education videos from a prop trading firm.
-The TapeLog Newsletter	https://thetapelog.beehiiv.com/	education	Free	newsletter,stats	Weekly trading-statistics lessons (this site's own newsletter).
+name	url	category	price	tags	description	affiliate_url
+TapeLog Trading Journal	https://tapelog-journal.github.io/tapelog/	journals	Free Lite; $24 one-time	excel,google-sheets,notion,das-trader,robinhood	Spreadsheet trading journal that imports DAS Trader Pro and Robinhood CSVs (this site's own product).	
+Tradervue	https://www.tradervue.com/	journals	Free plan; paid tiers	web,stocks,futures	Web-based trading journal with trade charts and performance reports.	
+TraderSync	https://tradersync.com/	journals	Paid	web,mobile,broker-sync	Trading journal with broker auto-import, replay and analytics.	
+Edgewonk	https://edgewonk.com/	journals	Paid	desktop,web,psychology	Trading journal focused on statistics and trader psychology.	
+TradeZella	https://www.tradezella.com/	journals	Paid	web,broker-sync,replay	Trading journal with automatic imports, playbooks and trade replay.	
+Kinfo	https://kinfo.com/	journals	Free; paid tiers	web,mobile,social	Trading journal and verified performance tracking with social features.	
+Chartlog	https://www.chartlog.com/	journals	Free plan; paid tiers	web,charts	Trading journal with charts generated for each trade.	
+Stonk Journal	https://stonkjournal.com/	journals	Free; paid tiers	web,stocks,options	Simple web trading journal for stocks and options.	
+TradesViz	https://www.tradesviz.com/	journals	Free plan; paid tiers	web,analytics	Trading journal with extensive charts and statistics.	
+TradingView	https://www.tradingview.com/	charting	Free plan; paid tiers	web,charts,screener,pine-script	Web charting platform with indicators, screeners and a social community.	https://www.tradingview.com/?aff_id=1172789
+TrendSpider	https://trendspider.com/	charting	Paid	web,charts,automation	Charting and technical analysis platform with automated pattern tools.	
+StockCharts	https://stockcharts.com/	charting	Free charts; paid tiers	web,charts	Long-running web charting service for technical analysis.	
+thinkorswim	https://www.schwab.com/trading/thinkorswim	charting	Free with Schwab account	desktop,charts,options	Schwab's trading and charting platform.	
+Sierra Chart	https://www.sierrachart.com/	charting	Paid	desktop,futures,charts	Desktop trading and charting platform popular with futures traders.	
+NinjaTrader	https://ninjatrader.com/	charting	Free platform; paid options	desktop,futures	Futures trading and charting platform and brokerage.	
+MetaTrader 5	https://www.metatrader5.com/	charting	Free	desktop,forex,cfd	Multi-asset trading platform widely offered by forex and CFD brokers.	
+DAS Trader Pro	https://dastrader.com/	charting	Paid via broker	desktop,stocks,hotkeys	Direct-access stock trading platform used by active day traders.	
+Finviz	https://finviz.com/	screeners	Free; paid Elite	web,stocks,screener	Stock screener, heat maps and market overview.	
+Trade Ideas	https://www.trade-ideas.com/	screeners	Paid	scanner,real-time	Real-time stock scanner with AI-driven trade ideas.	
+Stock Rover	https://www.stockrover.com/	screeners	Free plan; paid tiers	web,fundamentals	Research and screening platform focused on fundamentals.	
+Benzinga Pro	https://pro.benzinga.com/	screeners	Paid	news,real-time	Real-time market news and squawk for active traders.	
+Barchart	https://www.barchart.com/	screeners	Free; paid tiers	web,futures,options	Market data, screeners and options flow tools.	
+Unusual Whales	https://unusualwhales.com/	screeners	Free; paid tiers	options,flow	Options flow and market data platform.	
+Zacks	https://www.zacks.com/	screeners	Free; paid tiers	research,ratings	Stock research and screening with Zacks Rank ratings.	
+Interactive Brokers	https://www.interactivebrokers.com/	brokers	Varies	stocks,options,futures,global	Global multi-asset broker with low-cost trading.	
+Charles Schwab	https://www.schwab.com/	brokers	Varies	stocks,options,thinkorswim	US broker offering thinkorswim platform.	
+Fidelity	https://www.fidelity.com/	brokers	Varies	stocks,etfs	US broker with Active Trader Pro platform.	
+Robinhood	https://robinhood.com/	brokers	Varies	stocks,options,crypto,mobile	Commission-free app-based US broker.	
+Webull	https://www.webull.com/	brokers	Varies	stocks,options,mobile	App-based broker with charting tools.	
+TradeStation	https://www.tradestation.com/	brokers	Varies	stocks,futures,easylanguage	Broker and platform with EasyLanguage strategy scripting.	
+Lightspeed	https://www.lightspeed.com/	brokers	Varies	direct-access,active-traders	Direct-access broker for high-volume traders.	
+Cobra Trading	https://www.cobratrading.com/	brokers	Varies	direct-access,short-locates	Direct-access broker known for short locates; offers DAS.	
+Tastytrade	https://tastytrade.com/	brokers	Varies	options,futures	Broker focused on options and futures traders.	
+E*TRADE	https://us.etrade.com/	brokers	Varies	stocks,options	US broker from Morgan Stanley with Power E*TRADE platform.	
+Tradovate	https://www.tradovate.com/	brokers	Varies	futures,web	Cloud-based futures trading platform and broker.	
+Topstep	https://www.topstep.com/	prop-firms	Paid evaluation	futures,funded	Futures funded-trader evaluation program.	
+FTMO	https://ftmo.com/	prop-firms	Paid evaluation	forex,cfd,funded	Forex and CFD funded-trader challenge.	
+Apex Trader Funding	https://apextraderfunding.com/	prop-firms	Paid evaluation	futures,funded	Futures funded-trader evaluation program.	
+Earn2Trade	https://www.earn2trade.com/	prop-firms	Paid evaluation	futures,funded	Futures funded-trader programs and education.	
+The5ers	https://the5ers.com/	prop-firms	Paid evaluation	forex,funded	Forex funded-trader programs.	
+Trade The Pool	https://tradethepool.com/	prop-firms	Paid evaluation	stocks,funded	Stock-focused funded-trader evaluation.	
+Polygon.io	https://polygon.io/	data-apis	Free tier; paid	api,stocks,options,real-time	Market data APIs for stocks, options, forex and crypto.	
+Alpha Vantage	https://www.alphavantage.co/	data-apis	Free tier; paid	api,stocks,fundamentals	Free and premium stock market data API.	
+Alpaca	https://alpaca.markets/	data-apis	Free tier; paid	api,broker,algo	Commission-free trading and market data API.	
+Tiingo	https://www.tiingo.com/	data-apis	Free tier; paid	api,eod,news	Financial data API with end-of-day prices and news.	
+Financial Modeling Prep	https://site.financialmodelingprep.com/	data-apis	Free tier; paid	api,fundamentals	Fundamentals and price data API.	
+Nasdaq Data Link	https://data.nasdaq.com/	data-apis	Free and paid datasets	api,datasets	Financial and alternative datasets (formerly Quandl).	
+Databento	https://databento.com/	data-apis	Usage-based	api,tick-data,futures	Tick-level historical and real-time market data.	
+SEC EDGAR	https://www.sec.gov/edgar/search/	data-apis	Free	filings,fundamentals	Official US company filings search.	
+FRED	https://fred.stlouisfed.org/	data-apis	Free	macro,api	Federal Reserve economic data series and API.	
+yfinance	https://github.com/ranaroussi/yfinance	data-apis	Free (open source)	python,open-source	Python library for downloading Yahoo Finance data.	
+Backtrader	https://www.backtrader.com/	backtesting	Free (open source)	python,open-source	Python backtesting and trading framework.	
+QuantConnect	https://www.quantconnect.com/	backtesting	Free tier; paid	cloud,python,c#	Cloud algorithmic trading and backtesting platform (LEAN engine).	
+Backtesting.py	https://kernc.github.io/backtesting.py/	backtesting	Free (open source)	python,open-source	Lightweight Python backtesting library.	
+vectorbt	https://vectorbt.dev/	backtesting	Free (open source); PRO paid	python,vectorized	Vectorized backtesting and analysis in Python.	
+Zipline Reloaded	https://github.com/stefan-jansen/zipline-reloaded	backtesting	Free (open source)	python,open-source	Maintained fork of the Zipline backtesting library.	
+Amibroker	https://www.amibroker.com/	backtesting	Paid	desktop,afl	Desktop charting and backtesting software.	
+Forex Tester	https://forextester.com/	backtesting	Paid	desktop,replay	Manual backtesting and market replay software.	
+TradingView Bar Replay	https://www.tradingview.com/support/solutions/43000712747-bar-replay-how-and-why-to-test-a-strategy-in-the-past/	backtesting	Free and paid plans	replay,manual	Replay historical bars to practice and test strategies.	
+Investopedia	https://www.investopedia.com/	education	Free	articles,definitions	Financial education articles and dictionary.	
+FINRA Day Trading Guidance	https://www.finra.org/investors/learn-to-invest/advanced-investing/day-trading-margin-requirements-know-rules	education	Free	regulation,pdt	Official FINRA information on day trading and margin rules.	
+SEC Investor.gov	https://www.investor.gov/	education	Free	investor-protection	SEC's investor education site.	
+CME Group Education	https://www.cmegroup.com/education.html	education	Free	futures,courses	Free futures and options courses from CME Group.	
+Options Industry Council	https://www.optionseducation.org/	education	Free	options,courses	Free options education from the OIC.	
+BabyPips	https://www.babypips.com/	education	Free	forex,course	Free beginner forex trading course.	
+SMB Capital YouTube	https://www.youtube.com/@smbcapital	education	Free	video,day-trading	Day-trading education videos from a prop trading firm.	
+The TapeLog Newsletter	https://thetapelog.beehiiv.com/	education	Free	newsletter,stats	Weekly trading-statistics lessons (this site's own newsletter).	
