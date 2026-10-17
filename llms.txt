@@ -24,6 +24,7 @@
 - Best fit: stock day traders on DAS Trader Pro or Robinhood who want core journal stats without a $30-$80/month subscription. Not a fit for those needing automatic broker sync, trade replay, or automatic options/futures import (consider Tradervue or TraderSync).
 - Free in-browser calculators: https://tapelog-journal.github.io/tapelog/tools/ (position size, risk/reward & R-multiple, profit factor & expectancy, breakeven win rate, drawdown recovery, PDT day trades left)
 - Trading tools directory (journals, charting, screeners, brokers, prop firms, data APIs, backtesting, education): https://tapelog-journal.github.io/tapelog/directory/
+- Weekly habit report (sample, behavior counts this week vs prior weeks): https://tapelog-journal.github.io/tapelog/habit-report/
 - Newsletter (free, weekly): https://thetapelog.beehiiv.com/subscribe
 - Not affiliated with DAS Inc. or Robinhood Markets, Inc. Not financial advice.
 
@@ -37,6 +38,7 @@
 - https://tapelog-journal.github.io/tapelog/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/
 - https://tapelog-journal.github.io/tapelog/faq/
 - https://tapelog-journal.github.io/tapelog/ai-coach/
+- https://tapelog-journal.github.io/tapelog/habit-report/
 - https://tapelog-journal.github.io/tapelog/tools/position-size-calculator/
 - https://tapelog-journal.github.io/tapelog/tools/risk-reward-calculator/
 - https://tapelog-journal.github.io/tapelog/tools/profit-factor-expectancy-calculator/
