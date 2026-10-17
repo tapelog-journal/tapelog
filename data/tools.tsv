@@ -1,7 +1,7 @@
 name	url	category	price	tags	description	affiliate_url
 TapeLog Trading Journal	https://tapelog-journal.github.io/tapelog/	journals	Free Lite; $24 one-time	excel,google-sheets,notion,das-trader,robinhood	Spreadsheet trading journal that imports DAS Trader Pro and Robinhood CSVs (this site's own product).	
 Tradervue	https://www.tradervue.com/	journals	Free plan; paid tiers	web,stocks,futures	Web-based trading journal with trade charts and performance reports.	
-TraderSync	https://tradersync.com/	journals	Paid	web,mobile,broker-sync	Trading journal with broker auto-import, replay and analytics.	
+TraderSync	https://tradersync.com/	journals	Paid	web,mobile,broker-sync	Trading journal with broker auto-import, replay and analytics.	https://tradersync.com?ref=tapelog-b816b4
 Edgewonk	https://edgewonk.com/	journals	Paid	desktop,web,psychology	Trading journal focused on statistics and trader psychology.	
 TradeZella	https://www.tradezella.com/	journals	Paid	web,broker-sync,replay	Trading journal with automatic imports, playbooks and trade replay.	
 Kinfo	https://kinfo.com/	journals	Free; paid tiers	web,mobile,social	Trading journal and verified performance tracking with social features.	
