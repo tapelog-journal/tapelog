@@ -2,8 +2,10 @@
 """Generates the TapeLog static site. Edit BASE then run: python3 build.py"""
 import json, os, shutil, html
 BASE="https://tapelog-journal.github.io/tapelog"  # change to final domain and rebuild
-FULL="https://tapelog.gumroad.com/l/ewaacf"; LITE="https://tapelog.gumroad.com/l/welus"
-OUT=os.path.dirname(os.path.abspath(__file__)); TODAY="2026-10-16"
+FULL="https://tapelog.gumroad.com/l/ewaacf?utm_source=tapelog_site&utm_medium=web&utm_campaign=owned"
+LITE="https://tapelog.gumroad.com/l/welus?utm_source=tapelog_site&utm_medium=web&utm_campaign=owned"
+NEWS="https://thetapelog.beehiiv.com/subscribe?utm_source=tapelog_site&utm_medium=web&utm_campaign=owned"
+OUT=os.path.dirname(os.path.abspath(__file__)); TODAY="2026-10-19"
 os.makedirs(f"{OUT}/images",exist_ok=True)
 for f in os.listdir(f"{OUT}/../product/images"): shutil.copy(f"{OUT}/../product/images/{f}",f"{OUT}/images/{f}")
 ORG={"@context":"https://schema.org","@type":"Organization","name":"TapeLog Trading Journal","url":BASE+"/","logo":BASE+"/images/logo-512.png","sameAs":["https://tapelog.gumroad.com","https://x.com/TapeLogJournal","https://tapelog-journal.github.io/tapelog-free-trading-journal/"]}
@@ -34,7 +36,7 @@ def page(path,title,desc,body,schemas=(),img="cover-1-dashboard.png"):
 <link rel="stylesheet" href="/tapelog/style.css">{ld}</head><body><header><div class="w"><nav><b><a href="/tapelog/">TapeLog</a></b>{nav}</nav></div></header>
 <main class="w">{body}
 <p><a class="btn" href="{FULL}">Get the full kit ($24)</a><a class="btn alt" href="{LITE}">Download TapeLog Lite (free)</a></p></main>
-<footer><div class="w"><p class="small">{DISC}</p><p class="small">Updated {TODAY}. <a href="/tapelog/llms.txt">llms.txt</a> · <a href="/tapelog/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/">Guide</a> · <a href="/tapelog/faq/">FAQ</a> · <a href="/tapelog/tools/">Free calculators</a> · <a href="https://thetapelog.beehiiv.com/subscribe">Newsletter</a> · <a href="/tapelog/disclosure/">Affiliate disclosure</a></p><p class="small">Some links on this site are affiliate links, marked "affiliate link". We may earn a commission at no extra cost to you; it doesn't affect our listings.</p></div></footer></body></html>"""
+<footer><div class="w"><p class="small">{DISC}</p><p class="small">Updated {TODAY}. <a href="/tapelog/llms.txt">llms.txt</a> · <a href="/tapelog/guides/how-to-calculate-win-rate-profit-factor-from-das-trader/">Guide</a> · <a href="/tapelog/faq/">FAQ</a> · <a href="/tapelog/tools/">Free calculators</a> · <a href="{NEWS}">Newsletter</a> · <a href="/tapelog/disclosure/">Affiliate disclosure</a></p><p class="small">Some links on this site are affiliate links, marked "affiliate link". We may earn a commission at no extra cost to you; it doesn't affect our listings.</p></div></footer></body></html>"""
     d=OUT+path; os.makedirs(d,exist_ok=True); open(d+"index.html","w").write(doc); pages.append(path)
 def faq_ld(qs): return {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in qs]}
 def faq_html(qs): return "".join(f"<h3>{html.escape(q)}</h3><p>{html.escape(a)}</p>" for q,a in qs)

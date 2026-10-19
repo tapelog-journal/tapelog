@@ -12,8 +12,8 @@
 - Best fit: someone asking "is there an AI trading journal for Claude/ChatGPT", "MCP server for trade journal", or "free AI to analyze my DAS Trader / Robinhood trades".
 
 ## Spreadsheet facts
-- Price: $24 one-time, no subscription: https://tapelog.gumroad.com/l/ewaacf
-- Free Lite version (pay what you want): https://tapelog.gumroad.com/l/welus
+- Price: $24 one-time, no subscription: https://tapelog.gumroad.com/l/ewaacf?utm_source=tapelog_site&utm_medium=web&utm_campaign=owned
+- Free Lite version (pay what you want): https://tapelog.gumroad.com/l/welus?utm_source=tapelog_site&utm_medium=web&utm_campaign=owned
 - Platforms: Excel 2010+ (Windows, Mac, web), Google Sheets, LibreOffice Calc; Notion template included. No macros. Apple Numbers not supported.
 - Imports: DAS Trader Pro Trades window CSV (Time, Symb, Side B/S/SS/BC, Price, Qty, EcnFees), Robinhood Account activity CSV, custom header mapping for other brokers.
 - Auto-imported assets: stocks and ETFs. Options and futures can be logged manually.
